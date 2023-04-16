@@ -30,7 +30,7 @@ class TodoController extends Controller
         }
     
         // Paginate the results and return as a JSON response
-        $todos = $query->paginate($perPage);
+        $todos = $query->paginate($perPage); // Using the Laravel built-in pagination
     
         return response()->json($todos);
     }
